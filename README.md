@@ -26,5 +26,5 @@ sequenceDiagram
     FluxHub->>Merchants: create_checkout()
     FluxHub->>Merchants: authorize_payment() (Mandate Approval)
     FluxHub->>Merchants: check_payment_status()
-```
     FluxHub-->>User: Final Transaction Report (PAID)
+```
