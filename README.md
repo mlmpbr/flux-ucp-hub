@@ -14,7 +14,7 @@ O sistema é dividido em dois domínios:
 2. **The Ecosystem (Merchants):** Simuladores de APIs de e-commerce que expõem capacidades via UCP.
 
 ```mermaid
-sequence_diagram
+sequenceDiagram
     participant User
     participant FluxHub as Gemini Agent
     participant Merchants as Store APIs (8182, 8183, 8184)
@@ -26,4 +26,5 @@ sequence_diagram
     FluxHub->>Merchants: create_checkout()
     FluxHub->>Merchants: authorize_payment() (Mandate Approval)
     FluxHub->>Merchants: check_payment_status()
+```
     FluxHub-->>User: Final Transaction Report (PAID)
